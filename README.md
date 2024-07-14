@@ -1,2 +1,6 @@
 # web-scraping-agencia-gov
-Projeto com fim educativo, onde realizo o ETL no portal de notícias do governo.
+Projeto de Web Scraping, totalmente focado em fins educativos. Nesso projeto eu faço o ETL no site https://agenciagov.ebc.com.br/ que é um canal de notícias do Governo Brasileiro. Aqui criei diversas funções, que fazem requisições ao site de notícias, coletam informações, realizando as transformações necessárias e por fim carregam esses dados em um banco de dados.
+Decidi deixar a coleta com entradas do usuário, para ter um maior controle dos dados que serão coletados, o que pode ser mudado para automatizar todo o processo.
+Dessa forma não honeramos o site e coletamos apenas o necessário para realizar os testes.
+Com fim de mostrar o funcionamento, já realizei a coleta para a seção "águas" do portal, você poderá realizar uma consulta fazendo requisição com o método get através desta url: https://scrap-81dd0-default-rtdb.firebaseio.com/. Para manter a integridade do banco de dados, você não poderá realizar outros tipos de requisições através deste endpoint, caso você queira testar localmente, deverá criar um banco de dados no Googl Firebase e mudar as regras para aceitar outros métodos além do get.
+Posteriormente criarei um repositório para realizar requisições diretamente no banco de dados e gerar um data frame.
